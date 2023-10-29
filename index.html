@@ -1,0 +1,83 @@
+<html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Incrementaling"</title>
+</head>
+<body>
+    <h1><p>This is your Number: <span id="Number">0</span></p></h1>
+<body>
+    
+    <button onclick="CreateNumber()">Create Your Number!</button>
+
+    <button onclick="BuyFactory()">Factory [<span id="FactoryPrice">100</span>] -- <span id="Factories">0</span></button>
+
+    <button onclick>o</button>
+
+</body>
+</body>
+</html></html>
+
+
+
+
+<h1><p>This is your Number: <span id="Number">0</span></p></h1>
+<body>
+    
+    <button onclick="CreateNumber()">Create Your Number!</button>
+
+    <button onclick="BuyFactory()">Factory [<span id="FactoryPrice">100</span>] -- <span id="Factories">0</span></button>
+
+    <button onclick>o</button>
+
+</body>
+
+
+
+
+<script>
+    var Number = 100
+
+    var FactoryPrice = 100;
+    var Factories = 0;
+
+
+    //-----------------------------------------------------------------------------------------------------------
+    // Factories
+
+    function BuyFactory() {
+        if (Number >= FactoryPrice) {
+            Number = Number - FactoryPrice;
+            Factories = Factories + 1;
+            FactoryPrice = Math.round(FactoryPrice * 1.35);
+            document.getElementById("Number").innerHTML = Number;
+            document.getElementById("FactoryPrice").innerHTML = FactoryPrice;
+            document.getElementById("Factories").innerHTML = Factories;
+        }
+
+    }
+    //-----------------------------------------------------------------------------------------------------------
+
+    //-----------------------------------------------------------------------------------------------------------
+
+    function CreateNumber() {
+        Number = Number + 1;
+        
+        document.getElementById("Number").innerHTML = Number;
+    }
+    setInterval(function()  {
+        Number = Number + Factories;
+        
+        document.getElementById("Number").innerHTML = Number;
+    }, 0.0000000000000001); // counted by milliseconds
+
+
+    setInterval(33)
+
+
+
+
+
+
+
+</script>
