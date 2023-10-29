@@ -8,3 +8,5 @@ There was a man who loved numbers so much, he deticaded a whole factory to just 
 And after another hour a 2!
 and so on until he got 100!
 Now he was able to upgrade his factory and go on with his life since it was automated.
+
+![Current logo](file:///D:/Number%20Disctrict%20Incremental/N.%20D.%20Incremental.jpg)
