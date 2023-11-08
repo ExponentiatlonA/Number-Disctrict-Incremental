@@ -17,9 +17,9 @@
 
 
 <script>
-    var Number = 100
+    var Number = 1
 
-    var FactoryPrice = 100;
+    var FactoryPrice = 50;
     var Factories = 0;
 
 
@@ -30,7 +30,7 @@
         if (Number >= FactoryPrice) {
             Number = Number - FactoryPrice;
             Factories = Factories + 1;
-            FactoryPrice = Math.round(FactoryPrice * 1.35);
+            FactoryPrice = Math.round(FactoryPrice * 1.15);
             document.getElementById("Number").innerHTML = Number;
             document.getElementById("FactoryPrice").innerHTML = FactoryPrice;
             document.getElementById("Factories").innerHTML = Factories;
